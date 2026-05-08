@@ -1,0 +1,19 @@
+# Candy store exercise
+
+candy_types = ("Skittles", "Starburst", "Jolly Rancher")
+flavors = ("Strawberry", "Apple", "Grape")
+
+candy_set = set()
+
+candy_set.add(candy_types[0] + " " + flavors[1])
+candy_set.add(candy_types[1] + " " + flavors[0])
+candy_set.add(candy_types[2] + " " + flavors[2])
+
+print("Today's candy options include:")
+print(candy_set)
+
+print(candy_set)
+print(candy_set)
+
+# Note:
+# Set does not keep order, so output may change each time

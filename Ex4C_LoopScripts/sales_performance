@@ -1,0 +1,27 @@
+# sales_performance
+
+sales_data = [
+    ('Marcus Webb', 'East', 4250.00),
+    ('Priya Sharma', 'West', 5875.50),
+    ('DeShawn Carter', 'East', 3100.75),
+    ('LaTonya Rivers', 'South', 6420.00),
+    ('Bob Nguyen', 'West', 4980.25),
+]
+
+for name, region, sales in sales_data:
+    print(f"Name: {name}")
+    print(f"Region: {region}")
+    print(f"Sales: ${sales}")
+    print("------------------------")
+
+#Notes 
+#Tuple unpacking: name, region, sales
+#Loop goes through each record
+#Clean formatted output per person
+
+# Output:
+# Marcus Webb | East | 4250.0
+# Priya Sharma | West | 5875.5
+# DeShawn Carter | East | 3100.75
+# LaTonya Rivers | South | 6420.0
+# Bob Nguyen | West | 4980.25

@@ -1,0 +1,17 @@
+import math
+
+# Distance between two points (x1,y1) and (x2,y2)
+# Using square root formula
+
+x1 = 1
+y1 = 2
+
+x2 = 4
+y2 = 6
+
+distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+print(format(distance, ".2f"))
+
+# Note:
+# Distance from (1,2) to (4,6) = 5.00

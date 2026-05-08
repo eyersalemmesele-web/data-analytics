@@ -1,0 +1,63 @@
+# complex_taxes
+
+hours_worked = 40
+hourly_rate = 15
+filing_status = "single"  # change to "joint" to test
+
+# weekly gross pay
+weekly_pay = hours_worked * hourly_rate
+
+# weeks in a year
+weeks_in_year = 52
+
+# annual gross pay
+annual_pay = weekly_pay * weeks_in_year
+
+# tax rate
+tax_rate = 0
+
+# TAX TABLE (CORRECT)
+
+if filing_status == "single":
+    if annual_pay < 12000:
+        tax_rate = 0.05
+    elif annual_pay < 25000:
+        tax_rate = 0.10
+    elif annual_pay < 75000:
+        tax_rate = 0.15
+    else:
+        tax_rate = 0.20
+
+elif filing_status == "joint":
+    if annual_pay < 12000:
+        tax_rate = 0.00
+    elif annual_pay < 25000:
+        tax_rate = 0.06
+    elif annual_pay < 75000:
+        tax_rate = 0.11
+    else:
+        tax_rate = 0.20
+
+# tax calculations (weekly)
+tax_withheld = weekly_pay * tax_rate
+net_pay = weekly_pay - tax_withheld
+
+# output
+print("You worked", hours_worked, "hours this period.")
+print("Hourly rate:", hourly_rate)
+print("Gross weekly pay:", weekly_pay)
+print("Filing status:", filing_status)
+print("Annual gross income:", annual_pay)
+print("Tax rate:", tax_rate)
+print("Tax withheld:", tax_withheld)
+print("Net pay:", net_pay)
+
+# Output:
+# You worked 40 hours this period.
+# Hourly rate: 15
+# Gross weekly pay: 600
+# Filing status: single
+# Annual gross income: 31200
+# Tax rate: 0.15
+# Tax withheld: 90.0
+# Net pay: 510.0

@@ -1,0 +1,29 @@
+# Net worth is how much money I have after subtracting what I owe
+
+# These are things I own (assets)
+cash = 5000  # money I have in hand
+car = 12000  # value of my car
+savings = 3000  # money in my savings account
+
+# These are things I owe (debts)
+credit_card = 1500  # credit card balance I need to pay
+student_loan = 4000  # student loan I owe
+
+# Add all assets together
+total_assets = cash + car + savings
+
+# Add all debts together
+total_debts = credit_card + student_loan
+
+# Net worth is assets minus debts
+net_worth = total_assets - total_debts
+
+# Show results
+print("Your total assets are " + str(total_assets))
+print("Your total debts are " + str(total_debts))
+print("Your net worth is " + str(net_worth))
+
+#Your total assets are 20000
+#Your total debts are 5500
+#Your net worth is 14500
+#Note: Net worth is assets minus debts.

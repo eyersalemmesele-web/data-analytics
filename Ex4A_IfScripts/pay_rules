@@ -1,0 +1,30 @@
+# Ask the user to enter hourly pay rate and convert it to a decimal number
+pay_rate = float(input("Enter pay rate: "))
+
+# Ask the user to enter hours worked and convert it to a decimal number
+hours_worked = float(input("Enter hours worked: "))
+
+# Check if the employee worked 40 hours or less (no overtime)
+if hours_worked <= 40:
+    # Regular pay only (no overtime)
+    gross_pay = pay_rate * hours_worked
+else:
+    # Regular pay for first 40 hours
+    regular_pay = pay_rate * 40
+
+    # Calculate overtime hours (anything above 40)
+    overtime_hours = hours_worked - 40
+
+    # Overtime pay is 1.5 times the normal pay rate
+    overtime_pay = overtime_hours * pay_rate * 1.5
+
+    # Total pay = regular pay + overtime pay
+    gross_pay = regular_pay + overtime_pay
+
+# Print the final gross pay rounded to 2 decimal places (money format)
+print("Gross Pay:", round(gross_pay, 2))
+
+# Example Run:
+# Enter pay rate: 20
+# Enter hours worked: 45
+# Gross Pay: 950.0

@@ -1,0 +1,42 @@
+# show_major
+
+student_name = "John Doe"
+student_major = "BIOL"  # change this to test different codes
+
+# default values (if not found)
+major_name = "<unknown>"
+department_office = ""
+
+# LOOKUP LOGIC
+if student_major == "BIOL":
+    major_name = "Biology"
+    department_office = "Science Bldg, Room 310"
+
+elif student_major == "CSCI":
+    major_name = "Computer Science"
+    department_office = "CSCI Building, Room 120"
+
+elif student_major == "ENG":
+    major_name = "English"
+    department_office = "Kerr Hall, Room 201"
+
+elif student_major == "HIST":
+    major_name = "History"
+    department_office = "Kerr Hall, Room 114"
+
+elif student_major == "MKT":
+    major_name = "Marketing"
+    department_office = "Westly Hall, Room 310"
+
+# OUTPUT
+
+print("Student Name:", student_name)
+print("Major Code:", student_major)
+print("Major Name:", major_name)
+print("Department Office:", department_office)
+
+# Output:
+# Student Name: John Doe
+# Major Code: BIOL
+# Major Name: Biology
+# Department Office: Science Bldg, Room 310

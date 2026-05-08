@@ -1,0 +1,12 @@
+# Tax calculation (23% withholding)
+
+salary = 75000
+
+taxes = salary * 0.23
+
+print(format(taxes, ".2f"))
+
+# Note:
+# Salary: 75000
+# Tax rate: 23%
+# Output: 17250.00

@@ -1,0 +1,14 @@
+# Tip is a percentage of the total bill
+
+bill = 50  # total restaurant bill
+tip_percent = 0.18  # 18% tip
+
+# Multiply bill by tip percentage
+tip_amount = bill * tip_percent
+
+# Show result
+print("The tip on a $" + str(bill) + " restaurant bill is $" + str(tip_amount))
+
+#Output
+#The tip on a $50.00 restaurant bill is $9.00
+#Note: Tip amount is calculated by multiplying the bill by the tip percentage.

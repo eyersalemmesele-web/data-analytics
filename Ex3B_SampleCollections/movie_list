@@ -1,0 +1,23 @@
+# Movie list exercise
+
+movies = ["Inception", "Interstellar", "Titanic", "Avatar"]
+
+# number of movies
+print("The list movies includes my top", len(movies), "favorite movies")
+
+# print full list
+print(movies)
+
+# sorted without changing original list
+print(sorted(movies))
+print(movies)
+
+# sort() changes the original list
+movies.sort()
+print(movies)
+
+# add a new movie
+movies.append("The Dark Knight")
+
+print("The list movies includes my top", len(movies), "favorite movies")
+print(movies)

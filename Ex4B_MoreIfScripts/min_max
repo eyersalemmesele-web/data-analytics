@@ -1,0 +1,33 @@
+# min_max
+
+a = 12
+b = 5
+c = 20
+
+# Find smallest number
+
+if a <= b and a <= c:
+    smallest = a
+elif b <= a and b <= c:
+    smallest = b
+else:
+    smallest = c
+
+# Find largest number
+
+if a >= b and a >= c:
+    largest = a
+elif b >= a and b >= c:
+    largest = b
+else:
+    largest = c
+
+
+# Output
+
+print("Smallest number is:", smallest)
+print("Largest number is:", largest)
+
+# Output:
+# Smallest number is: 5
+# Largest number is: 20

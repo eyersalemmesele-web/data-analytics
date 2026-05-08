@@ -1,0 +1,24 @@
+# savings_goal
+
+balance = 100
+goal = 1000
+weekly_savings = 150
+
+while balance < goal:
+    balance += weekly_savings
+
+    if balance >= goal:
+        print(f"Goal met! My current balance is {balance}")
+    elif balance >= 0.75 * goal:
+        print(f"So close! After treating myself, my balance is up to {balance - 50}")
+        balance -= 50
+    elif balance >= 0.5 * goal:
+        print(f"Almost there! This week my balance is up to {balance}")
+    else:
+        print(f"This week my balance increased to {balance}")
+
+#Notes
+#while loop runs until goal is reached
+#50% -- “Almost there”
+#75% -- treat (subtract 50)
+#goal reached -- stop

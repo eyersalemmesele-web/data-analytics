@@ -1,0 +1,20 @@
+# LAB 1 - Restaurant bill calculation
+
+# Food cost of the meal
+food_cost = 79.25  # I stored the price of food as a number
+
+# Tax added to the bill
+tax = 6.54  # I stored tax as a number value
+
+# Tip given to server
+tip = 12.00  # I stored tip as a number
+
+# Total bill calculation
+total_due = food_cost + tax + tip  # I added all values to get final amount
+
+# str() converts number into text so it can be combined with words in print
+# print("The total due is " + str(total_due))  # displays final result
+
+print("Food cost is " + str(food_cost) + " and tax is " + str(tax))
+print("Tip is " + str(tip))
+print("Total due is " + str(total_due))

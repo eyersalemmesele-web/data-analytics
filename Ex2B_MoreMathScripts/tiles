@@ -1,0 +1,21 @@
+import math
+
+# Tile calculation for a room
+# Includes 10% extra for breakage
+
+length = 10
+width = 10
+
+area = length * width
+
+tiles_needed = area * 1.10
+
+boxes = math.ceil(tiles_needed / 12)
+
+print(boxes)
+
+# Note:
+# Room size is 10x10 = 100 sq ft
+# With 10% extra, tiles needed = 110 sq ft
+# Each box covers 12 tiles
+# Total boxes needed: 10

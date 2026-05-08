@@ -1,0 +1,13 @@
+# Area of rectangle means multiplying two sides
+
+# I used my birthday numbers as side lengths
+side_a = 6  # month or day
+side_b = 12  # month or day
+
+# Multiply to get area
+area = side_a * side_b
+
+# Show results
+print("Side A is " + str(side_a))
+print("Side B is " + str(side_b))
+print("The area of the rectangle is " + str(area))

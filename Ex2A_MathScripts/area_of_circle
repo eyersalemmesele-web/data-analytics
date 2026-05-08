@@ -1,0 +1,13 @@
+import math
+
+# Diameter = birthday day number
+diameter = 7  
+
+# Convert diameter to radius
+radius = diameter / 2  
+
+# Calculate area of circle
+area = math.pi * radius ** 2  
+
+# Show result
+print(f"The area of a circle with radius {radius} is {area}")

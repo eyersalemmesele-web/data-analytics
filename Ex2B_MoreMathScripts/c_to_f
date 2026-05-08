@@ -1,0 +1,12 @@
+# Celsius to Fahrenheit conversion
+# Using formula: f = (c * 9/5) + 32
+
+c_temp = 23.88888888888889
+
+fahrenheit = (c_temp * 9/5) + 32
+
+print(format(fahrenheit, ".2f"), "Fahrenheit")
+
+# Note:
+# Input: 23.89 Celsius
+# Output: 75.00 Fahrenheit

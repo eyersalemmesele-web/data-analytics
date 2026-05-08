@@ -1,0 +1,38 @@
+# Address dictionary exercise
+
+contact_info = {
+    "name": "Eyerusalem Debero",
+    "address": "123 Main St",
+    "city": "Dallas",
+    "state": "TX",
+    "zip": "75201"
+}
+
+# formatted address
+print(f"""
+{contact_info['name']}
+{contact_info['address']}
+{contact_info['city']}, {contact_info['state']} {contact_info['zip']}
+""")
+
+# remove name
+contact_info.pop("name")
+
+# full name dictionary
+full_name = {
+    "first name": "Eyerusalem",
+    "last name": "Debero"
+}
+
+# add honorific
+full_name.update({"honorific": "Ms."})
+
+# add full_name to contact_info
+contact_info.update({"full_name": full_name})
+
+# updated formatted address
+print(f"""
+{full_name['honorific']} {full_name['first name']} {full_name['last name']}
+{contact_info['address']}
+{contact_info['city']}, {contact_info['state']} {contact_info['zip']}
+""")

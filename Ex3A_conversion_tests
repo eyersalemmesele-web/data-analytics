@@ -1,0 +1,71 @@
+# Description: This script tests various numeric conversion techniques
+# Author: Eyerusalem Debero
+
+import math
+
+# Given variables
+a = " 101.1 "
+b = "55"
+c = "402 Stevens"
+d = "Number 5 "
+
+# Print original values and types
+print(a, type(a))
+print(b, type(b))
+print(c, type(c))
+print(d, type(d))
+
+
+# Conversions for a
+
+# strip spaces
+a_clean = a.strip()
+
+# float conversion
+a_float = float(a_clean)
+
+# int conversion from float
+a_int = int(float(a_clean))
+
+print(a_clean, type(a_clean))
+print(a_float, type(a_float))
+print(a_int, type(a_int))
+
+
+# Conversions for b
+
+
+b_int = int(b)
+b_float = float(b)
+
+print(b_int, type(b_int))
+print(b_float, type(b_float))
+
+
+# Conversions for c
+
+
+# This will fail because of letters
+# c_int = int(c)  # ValueError: invalid literal for int()
+
+# c_float = float(c)  # ValueError: could not convert string to float
+
+print(c, type(c))
+
+
+# Conversions for d
+
+
+d_clean = d.strip()
+
+# slicing numeric part ("5")
+d_number = int(d_clean[-1])
+
+print(d_clean, type(d_clean))
+print(d_number, type(d_number))
+
+# Notes:
+# a needed strip + float conversion
+# b converts easily to int and float
+# c cannot be converted due to text
+# d needed strip + slicing to get number

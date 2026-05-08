@@ -1,0 +1,13 @@
+# loop_love
+
+words = ["amazing", "awesome", "excellent", "great", "fantastic"]
+
+for word in words:
+    print(f"Loops are {word}!")
+
+print("I <3 loops")
+
+#Notes
+#for loop goes through each word in the list
+#f-string inserts the word into the sentence
+#final print runs AFTER the loop

@@ -1,0 +1,30 @@
+# ranked_list
+
+items = ["pizza", "sushi", "burgers", "tacos", "pasta"]
+
+# normal order
+for index, item in enumerate(items, start=1):
+    if index == 1:
+        print(f"{index}. {item} <- top pick!")
+    else:
+        print(f"{index}. {item}")
+
+print("\n--- Reverse List ---")
+
+# reverse order (BONUS)
+for index, item in enumerate(reversed(items), start=1):
+    print(f"{index}. {item}")
+
+# Output:
+# 1. pizza <- top pick!
+# 2. sushi
+# 3. burgers
+# 4. tacos
+# 5. pasta
+
+# Reverse List 
+# 1. pasta
+# 2. tacos
+# 3. burgers
+# 4. sushi
+# 5. pizza

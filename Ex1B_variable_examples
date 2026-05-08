@@ -1,0 +1,24 @@
+# Customer information examples
+
+customer_id = 1001  # I used a number for ID, but it could also be a string if it has letters or leading zeros
+customer_name = "Abel Halu"  # I stored full name together, but maybe it should be split into first and last name
+customer_gender = "Male"  # I assumed limited options, but real systems might have more categories
+customer_dob = "2001-08-09"  # stored as text, but could be a date type for calculating age or sorting birthdays
+drivers_license_number = "D12345678"  # I used a string because it may contain letters and numbers
+auto_policy_number = "AP987654"  # I used a string because it includes letters + numbers
+
+# My personal information
+my_name = "Eyerusalem Debero"  # I put my name as a string
+my_location = "Dallas, Texas"  # I combined city and state, but they could be separated
+
+# Reserved words in Python (examples)
+# False, None, True, and, as, assert, break, class, continue, def, del, elif, else,
+# except, finally, for, from, global, if, import, in, is, lambda^^, nonlocal^^, not, or,
+# pass, raise, return, try, while, with, yield^^
+
+# My understanding of some keywords
+# def = used to create a function in Python
+# if = used to make decisions based on conditions
+# for = used to loop through data or repeat actions
+# import = used to bring in external tools or libraries
+# return = used to send a result back from a function
