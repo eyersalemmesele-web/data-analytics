@@ -1,0 +1,64 @@
+# Ex4D_Bonus_number_guesser
+
+# create number pool
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# second collection type
+secret_numbers = numbers.copy()
+
+# randomize order
+import random
+random.shuffle(secret_numbers)
+
+# choose secret number
+secret_number = secret_numbers[0]
+
+# tracking guesses
+guess_count = 0
+guessed_numbers = []
+
+print("Guess a number between 1 and 10")
+
+while True:
+
+    user_input = input("Enter your guess: ")
+
+    # safe for non-numeric input
+    if not user_input.isdigit():
+        print("Please enter a valid number.")
+        continue
+
+    guess = int(user_input)
+
+    # track guesses
+    guess_count += 1
+    guessed_numbers.append(guess)
+
+    # hints
+    if guess < secret_number:
+        print("Higher")
+
+    elif guess > secret_number:
+        print("Lower")
+
+    else:
+        print("Correct! You guessed the number!")
+        break
+
+# results
+print(f"You guessed the number in {guess_count} tries.")
+print("Your guesses were:", guessed_numbers)
+
+# awesome bonus
+if guess_count < 5:
+    print("You're awesome!")
+
+# Output:
+# Guess a number between 1 and 10
+# Enter your guess: 5
+# Higher
+# Enter your guess: 7
+# Correct! You guessed the number!
+# You guessed the number in 2 tries.
+# Your guesses were: [5, 7]
+# You're awesome!
