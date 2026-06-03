@@ -1,0 +1,125 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Northwind Database Review\
+Eyerusalem Debero\
+Week 9\
+\
+=== CATEGORIES ===\
+\
+Primary Key: CategoryID\
+Parent Tables: None\
+What does a record represent: One product category like Beverages or Dairy\
+Valuable columns: CategoryID, CategoryName, Description\
+Calculations possible: Count products per category\
+\
+\
+=== CUSTOMERS ===\
+Primary Key: CustomerID\
+Parent Tables: None\
+What does a record represent: One customer company \
+that buys products from Northwind Traders\
+Valuable columns: CustomerID, CompanyName, \
+City, Country, ContactName\
+Calculations possible: Count orders per customer,\
+total revenue per customer, customers by country\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 === EMPLOYEES ===
+\f0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 Primary Key: EmployeeID\
+Parent Tables: None\
+What does a record represent: One employee \
+who works at Northwind Traders and handles orders\
+Valuable columns: EmployeeID, FirstName, \
+LastName, Title, City, Country\
+Calculations possible: Count orders per employee,\
+sales performance per employee\
+\
+=== ORDERS ===\
+Primary Key: OrderID\
+Parent Tables: Customers, Employees, Shippers\
+What does a record represent: One order placed \
+by a customer handled by an employee\
+Valuable columns: OrderID, CustomerID, \
+EmployeeID, OrderDate, ShipCountry, ShipCity\
+Calculations possible: Count orders by date,\
+orders per customer, orders per employee,\
+shipping time calculation\
+\
+=== ORDER DETAILS ===\
+Primary Key: OrderID + ProductID together\
+Parent Tables: Orders, Products\
+What does a record represent: One product \
+line item inside an order \'97 what was bought,\
+how many, and at what price\
+Valuable columns: OrderID, ProductID, \
+UnitPrice, Quantity, Discount\
+Calculations possible: Total revenue per order,\
+revenue per product, discount analysis\
+\
+=== PRODUCTS ===\
+Primary Key: ProductID\
+Parent Tables: Categories, Suppliers\
+What does a record represent: One product \
+sold by Northwind Traders\
+Valuable columns: ProductID, ProductName, \
+CategoryID, SupplierID, UnitPrice, \
+UnitsInStock, Discontinued\
+Calculations possible: Total products per category,\
+average price per category, stock levels,\
+discontinued vs active products\
+\
+=== SHIPPERS ===\
+Primary Key: ShipperID\
+Parent Tables: None\
+What does a record represent: One shipping \
+company that delivers orders for Northwind\
+Valuable columns: ShipperID, CompanyName, Phone\
+Calculations possible: Count orders per shipper,\
+compare shipping companies performance\
+\
+=== SUPPLIERS ===\
+Primary Key: SupplierID\
+Parent Tables: None\
+What does a record represent: One company \
+that supplies products to Northwind Traders\
+Valuable columns: SupplierID, CompanyName,\
+ContactName, City, Country, Phone\
+Calculations possible: Count products per supplier,\
+suppliers by country, revenue per supplier\
+\
+=== REGION ===\
+Primary Key: RegionID\
+Parent Tables: None\
+What does a record represent: One geographic \
+region like Eastern, Western, Northern, Southern\
+Valuable columns: RegionID, RegionDescription\
+Calculations possible: Sales by region,\
+employees per region\
+\
+=== TERRITORIES ===\
+Primary Key: TerritoryID\
+Parent Tables: Region\
+What does a record represent: One sales territory \
+that belongs to a region\
+Valuable columns: TerritoryID, \
+TerritoryDescription, RegionID\
+Calculations possible: Count territories per region,\
+sales per territory\
+\
+=== EMPLOYEE TERRITORIES ===\
+Primary Key: EmployeeID + TerritoryID together\
+Parent Tables: Employees, Territories\
+What does a record represent: Which territories \
+each employee is responsible for\
+Valuable columns: EmployeeID, TerritoryID\
+Calculations possible: Count territories per employee,\
+employees per territory}
